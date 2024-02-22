@@ -13,13 +13,13 @@ class AuthController extends Controller
     //
     public function Login(Request $request){
         $request->validate([
-            'phone_number' => 'required|string',
+            'email' => 'required|string',
             'password' => 'required|string',
         ]);
 
-        $user = User::where('phone_number', $request->phone_number)->first();
+        $user = User::where('email', $request->phone_number)->first();
 
-        if (! $user || ! Hash::check($request->password, $user->password)) {
+        if (!$user || ! Hash::check($request->password, $user->password)) {
            return $this->error("Invalid Login Credentials");
         }
 

@@ -13,6 +13,7 @@ class Transactions extends Model
         'transaction_reference',
         'amount',
         'payment_method',
-        'external_transaction_id'
+        'external_transaction_id',
+        'status'
     ];
 }

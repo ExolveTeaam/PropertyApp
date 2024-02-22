@@ -2,7 +2,12 @@
 
 namespace App\Providers;
 
+use Cloudinary\Cloudinary;
 use Illuminate\Support\ServiceProvider;
+use App\Core\Services\Interfaces\ICloudinaryService;
+use App\Core\Services\Interfaces\IFlutterWaveService;
+use App\Core\Services\Implementations\CloudinaryService;
+use App\Core\Services\Implementations\FlutterwaveService;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -12,6 +17,8 @@ class AppServiceProvider extends ServiceProvider
     public function register(): void
     {
         //
+        $this->app->scoped(ICloudinaryService::class, CloudinaryService::class);
+        $this->app->scoped(IFlutterWaveService::class, FlutterwaveService::class);
     }
 
     /**
