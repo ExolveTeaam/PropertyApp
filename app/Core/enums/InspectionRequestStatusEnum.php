@@ -1,4 +1,4 @@
-<?
+<?php
 namespace App\Core\Enums;
  enum InspectionRequestStatusEnum: int{
     case PENDING = 1;

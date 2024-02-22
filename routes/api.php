@@ -19,14 +19,14 @@ use App\Http\Controllers\InspectorController;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
 
 Route::post('register', [RegistrationController::class, 'RegisterUser']);
 Route::post('login', [AuthController::class, 'Login']);
-Route::middleware(["api"])->group(function(){
+Route::middleware(["auth:api"])->group(function(){
     Route::post('logout', [AuthController::class, 'Logout']);
     Route::middleware(["must.be.propertymanager"])->prefix("request")->group(function(){
         Route::post("new",[InspectionRequestController::class,'CreateInspectionRequest']);

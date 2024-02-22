@@ -1,4 +1,4 @@
-<?
+<?php
 
 namespace App\Core\Services\Implementations;
 use App\Core\Services\Interfaces\ICloudinaryService;

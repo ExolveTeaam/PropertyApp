@@ -1,0 +1,604 @@
+openapi: 3.0.3
+info:
+  title: Laravel
+  description: ''
+  version: 1.0.0
+servers:
+  -
+    url: 'http://localhost:8000'
+paths:
+  /api/user:
+    get:
+      summary: ''
+      operationId: getApiUser
+      description: ''
+      parameters: []
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Endpoints
+  /api/register:
+    post:
+      summary: ''
+      operationId: postApiRegister
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                first_name:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: lhmxpeelneazecz
+                last_name:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: cacntvouzi
+                home_address:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: feqgxamkteukolfrqari
+                email:
+                  type: string
+                  description: 'Must be a valid email address.'
+                  example: conn.joseph@example.org
+                phone_number:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: bhxwoqqmw
+                role:
+                  type: integer
+                  description: ''
+                  example: '2'
+                  enum:
+                    - '1'
+                    - '2'
+                    - '3'
+                password:
+                  type: string
+                  description: 'Must be at least 8 characters.'
+                  example: '@cm>53#Il`{Wx8_:p'
+              required:
+                - first_name
+                - last_name
+                - home_address
+                - email
+                - phone_number
+                - role
+                - password
+  /api/login:
+    post:
+      summary: ''
+      operationId: postApiLogin
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                  description: ''
+                  example: rosie.hane@example.net
+                password:
+                  type: string
+                  description: ''
+                  example: 'Ts;jkyrRB,y)8LREW'
+              required:
+                - email
+                - password
+  /api/logout:
+    post:
+      summary: ''
+      operationId: postApiLogout
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+  /api/request/new:
+    post:
+      summary: ''
+      operationId: postApiRequestNew
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                unit_name:
+                  type: string
+                  description: ''
+                  example: vel
+                location:
+                  type: string
+                  description: ''
+                  example: nemo
+                property_type:
+                  type: string
+                  description: ''
+                  example: ut
+                images:
+                  type: array
+                  description: 'Must not be greater than 2048 characters.'
+                  example:
+                    - shasu
+                  items:
+                    type: string
+                is_occupied:
+                  type: boolean
+                  description: ''
+                  example: false
+                occupants_name:
+                  type: string
+                  description: ''
+                  example: id
+                occupants_contact:
+                  type: string
+                  description: ''
+                  example: facere
+                first_date:
+                  type: string
+                  description: 'Must be a valid date.'
+                  example: '2024-02-22T11:16:23'
+                second_date:
+                  type: string
+                  description: 'Must be a valid date.'
+                  example: '2024-02-22T11:16:23'
+              required:
+                - unit_name
+                - location
+                - property_type
+                - is_occupied
+                - occupants_name
+                - occupants_contact
+                - first_date
+                - second_date
+  /api/request/verifypayment:
+    patch:
+      summary: ''
+      operationId: patchApiRequestVerifypayment
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                transaction_reference:
+                  type: string
+                  description: ''
+                  example: sint
+                flutterwave_transaction_id:
+                  type: string
+                  description: ''
+                  example: neque
+              required:
+                - transaction_reference
+                - flutterwave_transaction_id
+  /api/profile/change-password:
+    patch:
+      summary: ''
+      operationId: patchApiProfileChangePassword
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                old_password:
+                  type: string
+                  description: ''
+                  example: consequatur
+                new_password:
+                  type: string
+                  description: 'Must be at least 8 characters.'
+                  example: xnlfwkvqtzwbpdtpfhcyu
+              required:
+                - old_password
+                - new_password
+  /api/profile/update-profile:
+    patch:
+      summary: ''
+      operationId: patchApiProfileUpdateProfile
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                first_name:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: zlrbxexkvdlrobuwuxtjv
+                last_name:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: tp
+                home_address:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: ult
+                email:
+                  type: string
+                  description: ''
+                  example: null
+                phone_number:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: gqjzihhppucnahhswbzpub
+  /api/reports/create:
+    post:
+      summary: ''
+      operationId: postApiReportsCreate
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                summary:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: mmvxu
+                property_name:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: xzhmmwdiwztxf
+                images:
+                  type: array
+                  description: 'Must not be greater than 2048 characters.'
+                  example:
+                    - odaxzpfpqqtkpgtpommqibff
+                  items:
+                    type: string
+                property_type:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: xz
+                inspection_id:
+                  type: integer
+                  description: ''
+                  example: 18
+                door_accessing_property:
+                  type: integer
+                  description: ''
+                  example: '3'
+                  enum:
+                    - '1'
+                    - '2'
+                    - '3'
+                    - '4'
+                stairway:
+                  type: integer
+                  description: ''
+                  example: '4'
+                  enum:
+                    - '1'
+                    - '2'
+                    - '3'
+                    - '4'
+                door_hinges:
+                  type: integer
+                  description: ''
+                  example: '3'
+                  enum:
+                    - '1'
+                    - '2'
+                    - '3'
+                    - '4'
+                door_locks:
+                  type: integer
+                  description: ''
+                  example: '4'
+                  enum:
+                    - '1'
+                    - '2'
+                    - '3'
+                    - '4'
+                conduit_wiring:
+                  type: integer
+                  description: ''
+                  example: '3'
+                  enum:
+                    - '1'
+                    - '2'
+                    - '3'
+                    - '4'
+                plumbing_leakage:
+                  type: integer
+                  description: ''
+                  example: '3'
+                  enum:
+                    - '1'
+                    - '2'
+                    - '3'
+                    - '4'
+                flooring:
+                  type: integer
+                  description: ''
+                  example: '4'
+                  enum:
+                    - '1'
+                    - '2'
+                    - '3'
+                    - '4'
+                electrical:
+                  type: integer
+                  description: ''
+                  example: '4'
+                  enum:
+                    - '1'
+                    - '2'
+                    - '3'
+                    - '4'
+                kitchen_sink:
+                  type: integer
+                  description: ''
+                  example: '2'
+                  enum:
+                    - '1'
+                    - '2'
+                    - '3'
+                    - '4'
+                kitchen_slab:
+                  type: integer
+                  description: ''
+                  example: '3'
+                  enum:
+                    - '1'
+                    - '2'
+                    - '3'
+                    - '4'
+                paintings:
+                  type: integer
+                  description: ''
+                  example: '3'
+                  enum:
+                    - '1'
+                    - '2'
+                    - '3'
+                    - '4'
+                windows_nets:
+                  type: integer
+                  description: ''
+                  example: '4'
+                  enum:
+                    - '1'
+                    - '2'
+                    - '3'
+                    - '4'
+                ceiling_pop:
+                  type: integer
+                  description: ''
+                  example: '1'
+                  enum:
+                    - '1'
+                    - '2'
+                    - '3'
+                    - '4'
+                bathtubs:
+                  type: integer
+                  description: ''
+                  example: '4'
+                  enum:
+                    - '1'
+                    - '2'
+                    - '3'
+                    - '4'
+                rooms_bedrooms_cabinet:
+                  type: integer
+                  description: ''
+                  example: '1'
+                  enum:
+                    - '1'
+                    - '2'
+                    - '3'
+                    - '4'
+                overall:
+                  type: integer
+                  description: ''
+                  example: '4'
+                  enum:
+                    - '1'
+                    - '2'
+                    - '3'
+                    - '4'
+                input_criteria:
+                  type: string
+                  description: ''
+                  example: et
+              required:
+                - summary
+                - property_name
+                - property_type
+                - inspection_id
+                - door_accessing_property
+                - stairway
+                - door_hinges
+                - door_locks
+                - conduit_wiring
+                - plumbing_leakage
+                - flooring
+                - electrical
+                - kitchen_sink
+                - kitchen_slab
+                - paintings
+                - windows_nets
+                - ceiling_pop
+                - bathtubs
+                - rooms_bedrooms_cabinet
+                - overall
+                - input_criteria
+  /api/reports/dashboard:
+    get:
+      summary: ''
+      operationId: getApiReportsDashboard
+      description: ''
+      parameters: []
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Endpoints
+  /api/reports/getreports:
+    get:
+      summary: ''
+      operationId: getApiReportsGetreports
+      description: ''
+      parameters: []
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Endpoints
+  '/api/reports/getreport/{id}':
+    get:
+      summary: ''
+      operationId: getApiReportsGetreportId
+      description: ''
+      parameters: []
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Endpoints
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the getreport.'
+        example: consequatur
+        required: true
+        schema:
+          type: string
+  '/api/reports/updatereportstatus/{id}':
+    post:
+      summary: ''
+      operationId: postApiReportsUpdatereportstatusId
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                status:
+                  type: integer
+                  description: ''
+                  example: '2'
+                  enum:
+                    - '2'
+                    - '3'
+              required:
+                - status
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the updatereportstatus.'
+        example: nam
+        required: true
+        schema:
+          type: string
+tags:
+  -
+    name: Endpoints
+    description: ''
+components:
+  securitySchemes:
+    default:
+      type: http
+      scheme: bearer
+      description: 'You can retrieve your token by visiting your dashboard and clicking <b>Generate API token</b>.'
+security:
+  -
+    default: []

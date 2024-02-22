@@ -1,0 +1,1073 @@
+name: Endpoints
+description: ''
+endpoints:
+  -
+    httpMethods:
+      - GET
+    uri: api/user
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer VEDeba6Pf864hZc1k5gdva3'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/register
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      first_name:
+        name: first_name
+        description: 'Must not be greater than 255 characters.'
+        required: true
+        example: lhmxpeelneazecz
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      last_name:
+        name: last_name
+        description: 'Must not be greater than 255 characters.'
+        required: true
+        example: cacntvouzi
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      home_address:
+        name: home_address
+        description: 'Must not be greater than 255 characters.'
+        required: true
+        example: feqgxamkteukolfrqari
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      email:
+        name: email
+        description: 'Must be a valid email address.'
+        required: true
+        example: conn.joseph@example.org
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      phone_number:
+        name: phone_number
+        description: 'Must not be greater than 255 characters.'
+        required: true
+        example: bhxwoqqmw
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      role:
+        name: role
+        description: ''
+        required: true
+        example: '2'
+        type: integer
+        enumValues:
+          - '1'
+          - '2'
+          - '3'
+        exampleWasSpecified: false
+        custom: []
+      password:
+        name: password
+        description: 'Must be at least 8 characters.'
+        required: true
+        example: '@cm>53#Il`{Wx8_:p'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanBodyParameters:
+      first_name: lhmxpeelneazecz
+      last_name: cacntvouzi
+      home_address: feqgxamkteukolfrqari
+      email: conn.joseph@example.org
+      phone_number: bhxwoqqmw
+      role: '2'
+      password: '@cm>53#Il`{Wx8_:p'
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer c4PaZ6bk6a3EvdgeDhV1f58'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/login
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      email:
+        name: email
+        description: ''
+        required: true
+        example: rosie.hane@example.net
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      password:
+        name: password
+        description: ''
+        required: true
+        example: 'Ts;jkyrRB,y)8LREW'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanBodyParameters:
+      email: rosie.hane@example.net
+      password: 'Ts;jkyrRB,y)8LREW'
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 5d6a6vPZhVDf8g4cEa3kbe1'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/logout
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer edbEDk4gcfa5a6vPZ13h68V'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/request/new
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      unit_name:
+        name: unit_name
+        description: ''
+        required: true
+        example: vel
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      location:
+        name: location
+        description: ''
+        required: true
+        example: nemo
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      property_type:
+        name: property_type
+        description: ''
+        required: true
+        example: ut
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      images:
+        name: images
+        description: 'Must not be greater than 2048 characters.'
+        required: false
+        example:
+          - shasu
+        type: 'string[]'
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      is_occupied:
+        name: is_occupied
+        description: ''
+        required: true
+        example: false
+        type: boolean
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      occupants_name:
+        name: occupants_name
+        description: ''
+        required: true
+        example: id
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      occupants_contact:
+        name: occupants_contact
+        description: ''
+        required: true
+        example: facere
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      first_date:
+        name: first_date
+        description: 'Must be a valid date.'
+        required: true
+        example: '2024-02-22T11:16:23'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      second_date:
+        name: second_date
+        description: 'Must be a valid date.'
+        required: true
+        example: '2024-02-22T11:16:23'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanBodyParameters:
+      unit_name: vel
+      location: nemo
+      property_type: ut
+      images:
+        - shasu
+      is_occupied: false
+      occupants_name: id
+      occupants_contact: facere
+      first_date: '2024-02-22T11:16:23'
+      second_date: '2024-02-22T11:16:23'
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer dfh1Pv4E5aa3ZV6kcb8eD6g'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - PATCH
+    uri: api/request/verifypayment
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      transaction_reference:
+        name: transaction_reference
+        description: ''
+        required: true
+        example: sint
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      flutterwave_transaction_id:
+        name: flutterwave_transaction_id
+        description: ''
+        required: true
+        example: neque
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanBodyParameters:
+      transaction_reference: sint
+      flutterwave_transaction_id: neque
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer vaZ66EDeP1kh5d83cbfaVg4'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - PATCH
+    uri: api/profile/change-password
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      old_password:
+        name: old_password
+        description: ''
+        required: true
+        example: consequatur
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      new_password:
+        name: new_password
+        description: 'Must be at least 8 characters.'
+        required: true
+        example: xnlfwkvqtzwbpdtpfhcyu
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanBodyParameters:
+      old_password: consequatur
+      new_password: xnlfwkvqtzwbpdtpfhcyu
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer gbDkVdaE8eP4vZ66c31a5hf'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - PATCH
+    uri: api/profile/update-profile
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      first_name:
+        name: first_name
+        description: 'Must not be greater than 255 characters.'
+        required: false
+        example: zlrbxexkvdlrobuwuxtjv
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      last_name:
+        name: last_name
+        description: 'Must not be greater than 255 characters.'
+        required: false
+        example: tp
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      home_address:
+        name: home_address
+        description: 'Must not be greater than 255 characters.'
+        required: false
+        example: ult
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      email:
+        name: email
+        description: ''
+        required: false
+        example: null
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      phone_number:
+        name: phone_number
+        description: 'Must not be greater than 255 characters.'
+        required: false
+        example: gqjzihhppucnahhswbzpub
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanBodyParameters:
+      first_name: zlrbxexkvdlrobuwuxtjv
+      last_name: tp
+      home_address: ult
+      phone_number: gqjzihhppucnahhswbzpub
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer hdaeak468vZE5bPc1D6gfV3'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/reports/create
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      summary:
+        name: summary
+        description: 'Must not be greater than 255 characters.'
+        required: true
+        example: mmvxu
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      property_name:
+        name: property_name
+        description: 'Must not be greater than 255 characters.'
+        required: true
+        example: xzhmmwdiwztxf
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      images:
+        name: images
+        description: 'Must not be greater than 2048 characters.'
+        required: false
+        example:
+          - odaxzpfpqqtkpgtpommqibff
+        type: 'string[]'
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      property_type:
+        name: property_type
+        description: 'Must not be greater than 255 characters.'
+        required: true
+        example: xz
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      inspection_id:
+        name: inspection_id
+        description: ''
+        required: true
+        example: 18
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      door_accessing_property:
+        name: door_accessing_property
+        description: ''
+        required: true
+        example: '3'
+        type: integer
+        enumValues:
+          - '1'
+          - '2'
+          - '3'
+          - '4'
+        exampleWasSpecified: false
+        custom: []
+      stairway:
+        name: stairway
+        description: ''
+        required: true
+        example: '4'
+        type: integer
+        enumValues:
+          - '1'
+          - '2'
+          - '3'
+          - '4'
+        exampleWasSpecified: false
+        custom: []
+      door_hinges:
+        name: door_hinges
+        description: ''
+        required: true
+        example: '3'
+        type: integer
+        enumValues:
+          - '1'
+          - '2'
+          - '3'
+          - '4'
+        exampleWasSpecified: false
+        custom: []
+      door_locks:
+        name: door_locks
+        description: ''
+        required: true
+        example: '4'
+        type: integer
+        enumValues:
+          - '1'
+          - '2'
+          - '3'
+          - '4'
+        exampleWasSpecified: false
+        custom: []
+      conduit_wiring:
+        name: conduit_wiring
+        description: ''
+        required: true
+        example: '3'
+        type: integer
+        enumValues:
+          - '1'
+          - '2'
+          - '3'
+          - '4'
+        exampleWasSpecified: false
+        custom: []
+      plumbing_leakage:
+        name: plumbing_leakage
+        description: ''
+        required: true
+        example: '3'
+        type: integer
+        enumValues:
+          - '1'
+          - '2'
+          - '3'
+          - '4'
+        exampleWasSpecified: false
+        custom: []
+      flooring:
+        name: flooring
+        description: ''
+        required: true
+        example: '4'
+        type: integer
+        enumValues:
+          - '1'
+          - '2'
+          - '3'
+          - '4'
+        exampleWasSpecified: false
+        custom: []
+      electrical:
+        name: electrical
+        description: ''
+        required: true
+        example: '4'
+        type: integer
+        enumValues:
+          - '1'
+          - '2'
+          - '3'
+          - '4'
+        exampleWasSpecified: false
+        custom: []
+      kitchen_sink:
+        name: kitchen_sink
+        description: ''
+        required: true
+        example: '2'
+        type: integer
+        enumValues:
+          - '1'
+          - '2'
+          - '3'
+          - '4'
+        exampleWasSpecified: false
+        custom: []
+      kitchen_slab:
+        name: kitchen_slab
+        description: ''
+        required: true
+        example: '3'
+        type: integer
+        enumValues:
+          - '1'
+          - '2'
+          - '3'
+          - '4'
+        exampleWasSpecified: false
+        custom: []
+      paintings:
+        name: paintings
+        description: ''
+        required: true
+        example: '3'
+        type: integer
+        enumValues:
+          - '1'
+          - '2'
+          - '3'
+          - '4'
+        exampleWasSpecified: false
+        custom: []
+      windows_nets:
+        name: windows_nets
+        description: ''
+        required: true
+        example: '4'
+        type: integer
+        enumValues:
+          - '1'
+          - '2'
+          - '3'
+          - '4'
+        exampleWasSpecified: false
+        custom: []
+      ceiling_pop:
+        name: ceiling_pop
+        description: ''
+        required: true
+        example: '1'
+        type: integer
+        enumValues:
+          - '1'
+          - '2'
+          - '3'
+          - '4'
+        exampleWasSpecified: false
+        custom: []
+      bathtubs:
+        name: bathtubs
+        description: ''
+        required: true
+        example: '4'
+        type: integer
+        enumValues:
+          - '1'
+          - '2'
+          - '3'
+          - '4'
+        exampleWasSpecified: false
+        custom: []
+      rooms_bedrooms_cabinet:
+        name: rooms_bedrooms_cabinet
+        description: ''
+        required: true
+        example: '1'
+        type: integer
+        enumValues:
+          - '1'
+          - '2'
+          - '3'
+          - '4'
+        exampleWasSpecified: false
+        custom: []
+      overall:
+        name: overall
+        description: ''
+        required: true
+        example: '4'
+        type: integer
+        enumValues:
+          - '1'
+          - '2'
+          - '3'
+          - '4'
+        exampleWasSpecified: false
+        custom: []
+      input_criteria:
+        name: input_criteria
+        description: ''
+        required: true
+        example: et
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanBodyParameters:
+      summary: mmvxu
+      property_name: xzhmmwdiwztxf
+      images:
+        - odaxzpfpqqtkpgtpommqibff
+      property_type: xz
+      inspection_id: 18
+      door_accessing_property: '3'
+      stairway: '4'
+      door_hinges: '3'
+      door_locks: '4'
+      conduit_wiring: '3'
+      plumbing_leakage: '3'
+      flooring: '4'
+      electrical: '4'
+      kitchen_sink: '2'
+      kitchen_slab: '3'
+      paintings: '3'
+      windows_nets: '4'
+      ceiling_pop: '1'
+      bathtubs: '4'
+      rooms_bedrooms_cabinet: '1'
+      overall: '4'
+      input_criteria: et
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer v6afc346P15ZhEbg8eDVakd'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/reports/dashboard
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 58hbPg3EadkeVaZ6c64fvD1'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/reports/getreports
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer a5V6ae8hfEdc1vZ6Pb3gk4D'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/reports/getreport/{id}'
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the getreport.'
+        required: true
+        example: consequatur
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanUrlParameters:
+      id: consequatur
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer e361vca6ghDEfPa84VdZ5kb'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: 'api/reports/updatereportstatus/{id}'
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the updatereportstatus.'
+        required: true
+        example: nam
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanUrlParameters:
+      id: nam
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      status:
+        name: status
+        description: ''
+        required: true
+        example: '2'
+        type: integer
+        enumValues:
+          - '2'
+          - '3'
+        exampleWasSpecified: false
+        custom: []
+    cleanBodyParameters:
+      status: '2'
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer DgZ8Pd646E3cavebk5hV1af'
+    controller: null
+    method: null
+    route: null
+    custom: []
