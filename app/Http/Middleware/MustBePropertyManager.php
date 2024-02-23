@@ -16,7 +16,7 @@ class MustBePropertyManager
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if ($request->user()->role !== RoleEnum::PROPERTYMANAGER->value) {
+        if ($request->user()->role !== RoleEnum::PROPERTYMANAGER->value || $request->user()->role !== RoleEnum::LANDLORD->value || $request->user()->role == null){
             return response()->json(['message' => 'You are not authorized to perform this action'], 403);
         }
         return $next($request);

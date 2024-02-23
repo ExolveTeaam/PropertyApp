@@ -40,8 +40,8 @@ Route::middleware(["auth:api"])->group(function(){
         Route::post("create",[InspectorController::class,'CreateReport']);
         Route::get("dashboard",[InspectorController::class,'DashboardRequests']);
         Route::get("getreports",[InspectorController::class,'GetReports']);
-        Route::get("getreport/{id}",[InspectorController::class,'GetReport']);
-        Route::post("updatereportstatus/{id}",[InspectorController::class,'ChangeInspectionRequestStatus']);
+        Route::get("getreport/{id}",[InspectorController::class,'GetReport'])->where('id','[0-9]+');
+        Route::post("updatereportstatus/{id}",[InspectorController::class,'ChangeInspectionRequestStatus'])->where('id','[0-9]+');
     });
 });
 
