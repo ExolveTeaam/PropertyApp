@@ -91,11 +91,11 @@ class FlutterwaveService implements IFlutterWaveService {
             'tx_ref' => $ref,
             'amount' => $amount,
             'currency' => 'NGN',
-            'redirect_url' =>config('app.url'). '/v1/payments/deposits/new/flutterwave-callback',
+            'redirect_url' =>config('app.url'). '/v1/flutterwave-callback',
             'payment_options' => 'card,banktransfer',
             'customer' => [
                 'email' => $user->email,
-                'name' => $user->full_name,
+                'name' => $user->first_name.' '.$user->last_name,
             ],
         ];
         $response = Http::withHeaders([

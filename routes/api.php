@@ -4,9 +4,10 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\SettingsController;
+use App\Http\Controllers\InspectorController;
 use App\Http\Controllers\RegistrationController;
 use App\Http\Controllers\InspectionRequestController;
-use App\Http\Controllers\InspectorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,11 +27,12 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::post('register', [RegistrationController::class, 'RegisterUser']);
 Route::post('login', [AuthController::class, 'Login']);
+Route::post('flutterwave-callback',[InspectionRequestController::class,'VerifyInspectionRequest']);
 Route::middleware(["auth:api"])->group(function(){
+    Route::get('settings',[SettingsController::class,'GetcontactDetials']);
     Route::post('logout', [AuthController::class, 'Logout']);
     Route::middleware(["must.be.propertymanager"])->prefix("request")->group(function(){
         Route::post("new",[InspectionRequestController::class,'CreateInspectionRequest']);
-        Route::patch("verifypayment",[InspectionRequestController::class,'VerifyInspectionRequest']);
     });
     Route::prefix("profile")->group(function(){
         Route::patch("change-password",[ProfileController::class,'ChangePassword']);

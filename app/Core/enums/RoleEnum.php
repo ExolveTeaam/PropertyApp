@@ -5,5 +5,6 @@ namespace App\Core\Enums;
     case LANDLORD = 1;
     case PROPERTYMANAGER = 2;
     CASE PROPERTYINSPECTOR = 3;
+    case ADMIN = 4;
 
  }
