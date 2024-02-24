@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "Laravel",
-        "_postman_id": "f9aef938-8257-46eb-ba8c-ebbbd4169374",
+        "_postman_id": "7a1c07a6-b90a-457c-be47-8a534165dfa1",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -86,7 +86,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"first_name\":\"lhmxpeelneazecz\",\"last_name\":\"cacntvouzi\",\"home_address\":\"feqgxamkteukolfrqari\",\"email\":\"conn.joseph@example.org\",\"phone_number\":\"bhxwoqqmw\",\"role\":\"2\",\"password\":\"@cm>53#Il`{Wx8_:p\"}"
+                            "raw": "{\"first_name\":\"tabud\",\"last_name\":\"edqzgtzvbitktsboolwfk\",\"home_address\":\"pklubtdqnt\",\"email\":\"aluettgen@example.net\",\"phone_number\":\"fawkaaddyzmbiyxev\",\"role\":\"3\",\"password\":\"=%mS3!QOdHZJ$l<^zVK\",\"password_confirmation\":\"luqjnjhndflqz\"}"
                         },
                         "description": ""
                     },
@@ -114,11 +114,84 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"rosie.hane@example.net\",\"password\":\"Ts;jkyrRB,y)8LREW\"}"
+                            "raw": "{\"email\":\"tre64@example.org\",\"password\":\"-B8&p%vV*9\\\"5^X\"}"
                         },
                         "description": ""
                     },
                     "response": []
+                },
+                {
+                    "name": "POST api\/flutterwave-callback",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/flutterwave-callback",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/flutterwave-callback"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"status\":\"non\",\"transaction_id\":\"et\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET api\/settings",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/settings",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/settings"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
                 },
                 {
                     "name": "POST api\/logout",
@@ -167,35 +240,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"unit_name\":\"vel\",\"location\":\"nemo\",\"property_type\":\"ut\",\"images\":[\"shasu\"],\"is_occupied\":false,\"occupants_name\":\"id\",\"occupants_contact\":\"facere\",\"first_date\":\"2024-02-22T11:16:23\",\"second_date\":\"2024-02-22T11:16:23\"}"
-                        },
-                        "description": ""
-                    },
-                    "response": []
-                },
-                {
-                    "name": "PATCH api\/request\/verifypayment",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "api\/request\/verifypayment",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/api\/request\/verifypayment"
-                        },
-                        "method": "PATCH",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": {
-                            "mode": "raw",
-                            "raw": "{\"transaction_reference\":\"sint\",\"flutterwave_transaction_id\":\"neque\"}"
+                            "raw": "{\"unit_name\":\"est\",\"location\":\"eum\",\"property_type\":\"quia\",\"images\":[\"keqni\"],\"is_occupied\":true,\"occupants_name\":\"id\",\"occupants_contact\":\"omnis\",\"first_date\":\"2024-02-24T14:30:45\",\"second_date\":\"2024-02-24T14:30:45\"}"
                         },
                         "description": ""
                     },
@@ -223,7 +268,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"old_password\":\"consequatur\",\"new_password\":\"xnlfwkvqtzwbpdtpfhcyu\"}"
+                            "raw": "{\"old_password\":\"laboriosam\",\"new_password\":\"ueinljlizvgobryidrjfkndtkgjoovfkfgypzol\"}"
                         },
                         "description": ""
                     },
@@ -251,7 +296,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"first_name\":\"zlrbxexkvdlrobuwuxtjv\",\"last_name\":\"tp\",\"home_address\":\"ult\",\"phone_number\":\"gqjzihhppucnahhswbzpub\"}"
+                            "raw": "{\"first_name\":\"hdpbbliatv\",\"last_name\":\"y\",\"home_address\":\"wlpulqwpjit\",\"phone_number\":\"mfxwali\"}"
                         },
                         "description": ""
                     },
@@ -279,7 +324,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"summary\":\"mmvxu\",\"property_name\":\"xzhmmwdiwztxf\",\"images\":[\"odaxzpfpqqtkpgtpommqibff\"],\"property_type\":\"xz\",\"inspection_id\":18,\"door_accessing_property\":\"3\",\"stairway\":\"4\",\"door_hinges\":\"3\",\"door_locks\":\"4\",\"conduit_wiring\":\"3\",\"plumbing_leakage\":\"3\",\"flooring\":\"4\",\"electrical\":\"4\",\"kitchen_sink\":\"2\",\"kitchen_slab\":\"3\",\"paintings\":\"3\",\"windows_nets\":\"4\",\"ceiling_pop\":\"1\",\"bathtubs\":\"4\",\"rooms_bedrooms_cabinet\":\"1\",\"overall\":\"4\",\"input_criteria\":\"et\"}"
+                            "raw": "{\"summary\":\"lxek\",\"property_name\":\"lqqxtqmanvmmiwasrxyhsaiq\",\"images\":[\"ydbojxoiebhwkkzcgebkwhgk\"],\"property_type\":\"hsofaqbtddgiwy\",\"inspection_id\":17,\"door_accessing_property\":\"3\",\"stairway\":\"4\",\"door_hinges\":\"3\",\"door_locks\":\"1\",\"conduit_wiring\":\"4\",\"plumbing_leakage\":\"1\",\"flooring\":\"4\",\"electrical\":\"4\",\"kitchen_sink\":\"2\",\"kitchen_slab\":\"3\",\"paintings\":\"1\",\"windows_nets\":\"1\",\"ceiling_pop\":\"3\",\"bathtubs\":\"4\",\"rooms_bedrooms_cabinet\":\"3\",\"overall\":\"1\",\"input_criteria\":\"ea\"}"
                         },
                         "description": ""
                     },
@@ -387,7 +432,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "consequatur",
+                                    "value": "720",
                                     "description": "The ID of the getreport."
                                 }
                             ]
@@ -440,7 +485,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "nam",
+                                    "value": "6",
                                     "description": "The ID of the updatereportstatus."
                                 }
                             ]

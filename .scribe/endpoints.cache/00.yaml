@@ -41,7 +41,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer VEDeba6Pf864hZc1k5gdva3'
+      - 'Bearer e8Z1cda4kf5hbag6v3E6DPV'
     controller: null
     method: null
     route: null
@@ -72,7 +72,7 @@ endpoints:
         name: first_name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: lhmxpeelneazecz
+        example: tabud
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -81,7 +81,7 @@ endpoints:
         name: last_name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: cacntvouzi
+        example: edqzgtzvbitktsboolwfk
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -90,7 +90,7 @@ endpoints:
         name: home_address
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: feqgxamkteukolfrqari
+        example: pklubtdqnt
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -99,7 +99,7 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: conn.joseph@example.org
+        example: aluettgen@example.net
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -108,7 +108,7 @@ endpoints:
         name: phone_number
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: bhxwoqqmw
+        example: fawkaaddyzmbiyxev
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -117,7 +117,7 @@ endpoints:
         name: role
         description: ''
         required: true
-        example: '2'
+        example: '3'
         type: integer
         enumValues:
           - '1'
@@ -129,26 +129,36 @@ endpoints:
         name: password
         description: 'Must be at least 8 characters.'
         required: true
-        example: '@cm>53#Il`{Wx8_:p'
+        example: '=%mS3!QOdHZJ$l<^zVK'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      password_confirmation:
+        name: password_confirmation
+        description: 'The value and <code>password</code> must match. Must be at least 8 characters.'
+        required: true
+        example: luqjnjhndflqz
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanBodyParameters:
-      first_name: lhmxpeelneazecz
-      last_name: cacntvouzi
-      home_address: feqgxamkteukolfrqari
-      email: conn.joseph@example.org
-      phone_number: bhxwoqqmw
-      role: '2'
-      password: '@cm>53#Il`{Wx8_:p'
+      first_name: tabud
+      last_name: edqzgtzvbitktsboolwfk
+      home_address: pklubtdqnt
+      email: aluettgen@example.net
+      phone_number: fawkaaddyzmbiyxev
+      role: '3'
+      password: '=%mS3!QOdHZJ$l<^zVK'
+      password_confirmation: luqjnjhndflqz
     fileParameters: []
     responses: []
     responseFields: []
     auth:
       - headers
       - Authorization
-      - 'Bearer c4PaZ6bk6a3EvdgeDhV1f58'
+      - 'Bearer ef5aD3E1g6hkc6vZVdaP84b'
     controller: null
     method: null
     route: null
@@ -179,7 +189,7 @@ endpoints:
         name: email
         description: ''
         required: true
-        example: rosie.hane@example.net
+        example: tre64@example.org
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -188,21 +198,118 @@ endpoints:
         name: password
         description: ''
         required: true
-        example: 'Ts;jkyrRB,y)8LREW'
+        example: '-B8&p%vV*9"5^X'
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanBodyParameters:
-      email: rosie.hane@example.net
-      password: 'Ts;jkyrRB,y)8LREW'
+      email: tre64@example.org
+      password: '-B8&p%vV*9"5^X'
     fileParameters: []
     responses: []
     responseFields: []
     auth:
       - headers
       - Authorization
-      - 'Bearer 5d6a6vPZhVDf8g4cEa3kbe1'
+      - 'Bearer 1c63k5b6e8vPVdhfa4ZEaDg'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/flutterwave-callback
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      status:
+        name: status
+        description: ''
+        required: true
+        example: non
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      transaction_id:
+        name: transaction_id
+        description: ''
+        required: true
+        example: et
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanBodyParameters:
+      status: non
+      transaction_id: et
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 4ZVEb1ecfv6aD3Pdgk685ha'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/settings
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer g461ZEa5c6bekPVf3dDh8av'
     controller: null
     method: null
     route: null
@@ -236,7 +343,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer edbEDk4gcfa5a6vPZ13h68V'
+      - 'Bearer bVZ1gkEc35668dfP4heDvaa'
     controller: null
     method: null
     route: null
@@ -267,7 +374,7 @@ endpoints:
         name: unit_name
         description: ''
         required: true
-        example: vel
+        example: est
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -276,7 +383,7 @@ endpoints:
         name: location
         description: ''
         required: true
-        example: nemo
+        example: eum
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -285,7 +392,7 @@ endpoints:
         name: property_type
         description: ''
         required: true
-        example: ut
+        example: quia
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -295,7 +402,7 @@ endpoints:
         description: 'Must not be greater than 2048 characters.'
         required: false
         example:
-          - shasu
+          - keqni
         type: 'string[]'
         enumValues: []
         exampleWasSpecified: false
@@ -304,7 +411,7 @@ endpoints:
         name: is_occupied
         description: ''
         required: true
-        example: false
+        example: true
         type: boolean
         enumValues: []
         exampleWasSpecified: false
@@ -322,7 +429,7 @@ endpoints:
         name: occupants_contact
         description: ''
         required: true
-        example: facere
+        example: omnis
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -331,7 +438,7 @@ endpoints:
         name: first_date
         description: 'Must be a valid date.'
         required: true
-        example: '2024-02-22T11:16:23'
+        example: '2024-02-24T14:30:45'
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -340,83 +447,29 @@ endpoints:
         name: second_date
         description: 'Must be a valid date.'
         required: true
-        example: '2024-02-22T11:16:23'
+        example: '2024-02-24T14:30:45'
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanBodyParameters:
-      unit_name: vel
-      location: nemo
-      property_type: ut
+      unit_name: est
+      location: eum
+      property_type: quia
       images:
-        - shasu
-      is_occupied: false
+        - keqni
+      is_occupied: true
       occupants_name: id
-      occupants_contact: facere
-      first_date: '2024-02-22T11:16:23'
-      second_date: '2024-02-22T11:16:23'
+      occupants_contact: omnis
+      first_date: '2024-02-24T14:30:45'
+      second_date: '2024-02-24T14:30:45'
     fileParameters: []
     responses: []
     responseFields: []
     auth:
       - headers
       - Authorization
-      - 'Bearer dfh1Pv4E5aa3ZV6kcb8eD6g'
-    controller: null
-    method: null
-    route: null
-    custom: []
-  -
-    httpMethods:
-      - PATCH
-    uri: api/request/verifypayment
-    metadata:
-      groupName: Endpoints
-      groupDescription: ''
-      subgroup: ''
-      subgroupDescription: ''
-      title: ''
-      description: ''
-      authenticated: true
-      custom: []
-    headers:
-      Authorization: 'Bearer {YOUR_AUTH_KEY}'
-      Content-Type: application/json
-      Accept: application/json
-    urlParameters: []
-    cleanUrlParameters: []
-    queryParameters: []
-    cleanQueryParameters: []
-    bodyParameters:
-      transaction_reference:
-        name: transaction_reference
-        description: ''
-        required: true
-        example: sint
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        custom: []
-      flutterwave_transaction_id:
-        name: flutterwave_transaction_id
-        description: ''
-        required: true
-        example: neque
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        custom: []
-    cleanBodyParameters:
-      transaction_reference: sint
-      flutterwave_transaction_id: neque
-    fileParameters: []
-    responses: []
-    responseFields: []
-    auth:
-      - headers
-      - Authorization
-      - 'Bearer vaZ66EDeP1kh5d83cbfaVg4'
+      - 'Bearer DEVv8eh1k3c645dZbafaPg6'
     controller: null
     method: null
     route: null
@@ -447,7 +500,7 @@ endpoints:
         name: old_password
         description: ''
         required: true
-        example: consequatur
+        example: laboriosam
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -456,21 +509,21 @@ endpoints:
         name: new_password
         description: 'Must be at least 8 characters.'
         required: true
-        example: xnlfwkvqtzwbpdtpfhcyu
+        example: ueinljlizvgobryidrjfkndtkgjoovfkfgypzol
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanBodyParameters:
-      old_password: consequatur
-      new_password: xnlfwkvqtzwbpdtpfhcyu
+      old_password: laboriosam
+      new_password: ueinljlizvgobryidrjfkndtkgjoovfkfgypzol
     fileParameters: []
     responses: []
     responseFields: []
     auth:
       - headers
       - Authorization
-      - 'Bearer gbDkVdaE8eP4vZ66c31a5hf'
+      - 'Bearer E6hbV6ecda4P5v1aDZfg8k3'
     controller: null
     method: null
     route: null
@@ -501,7 +554,7 @@ endpoints:
         name: first_name
         description: 'Must not be greater than 255 characters.'
         required: false
-        example: zlrbxexkvdlrobuwuxtjv
+        example: hdpbbliatv
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -510,7 +563,7 @@ endpoints:
         name: last_name
         description: 'Must not be greater than 255 characters.'
         required: false
-        example: tp
+        example: 'y'
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -519,7 +572,7 @@ endpoints:
         name: home_address
         description: 'Must not be greater than 255 characters.'
         required: false
-        example: ult
+        example: wlpulqwpjit
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -537,23 +590,23 @@ endpoints:
         name: phone_number
         description: 'Must not be greater than 255 characters.'
         required: false
-        example: gqjzihhppucnahhswbzpub
+        example: mfxwali
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanBodyParameters:
-      first_name: zlrbxexkvdlrobuwuxtjv
-      last_name: tp
-      home_address: ult
-      phone_number: gqjzihhppucnahhswbzpub
+      first_name: hdpbbliatv
+      last_name: 'y'
+      home_address: wlpulqwpjit
+      phone_number: mfxwali
     fileParameters: []
     responses: []
     responseFields: []
     auth:
       - headers
       - Authorization
-      - 'Bearer hdaeak468vZE5bPc1D6gfV3'
+      - 'Bearer Pev18kEh6fDc4a5abd6V3Zg'
     controller: null
     method: null
     route: null
@@ -584,7 +637,7 @@ endpoints:
         name: summary
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: mmvxu
+        example: lxek
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -593,7 +646,7 @@ endpoints:
         name: property_name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: xzhmmwdiwztxf
+        example: lqqxtqmanvmmiwasrxyhsaiq
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -603,7 +656,7 @@ endpoints:
         description: 'Must not be greater than 2048 characters.'
         required: false
         example:
-          - odaxzpfpqqtkpgtpommqibff
+          - ydbojxoiebhwkkzcgebkwhgk
         type: 'string[]'
         enumValues: []
         exampleWasSpecified: false
@@ -612,7 +665,7 @@ endpoints:
         name: property_type
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: xz
+        example: hsofaqbtddgiwy
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -621,7 +674,7 @@ endpoints:
         name: inspection_id
         description: ''
         required: true
-        example: 18
+        example: 17
         type: integer
         enumValues: []
         exampleWasSpecified: false
@@ -669,7 +722,7 @@ endpoints:
         name: door_locks
         description: ''
         required: true
-        example: '4'
+        example: '1'
         type: integer
         enumValues:
           - '1'
@@ -682,7 +735,7 @@ endpoints:
         name: conduit_wiring
         description: ''
         required: true
-        example: '3'
+        example: '4'
         type: integer
         enumValues:
           - '1'
@@ -695,7 +748,7 @@ endpoints:
         name: plumbing_leakage
         description: ''
         required: true
-        example: '3'
+        example: '1'
         type: integer
         enumValues:
           - '1'
@@ -760,7 +813,7 @@ endpoints:
         name: paintings
         description: ''
         required: true
-        example: '3'
+        example: '1'
         type: integer
         enumValues:
           - '1'
@@ -773,7 +826,7 @@ endpoints:
         name: windows_nets
         description: ''
         required: true
-        example: '4'
+        example: '1'
         type: integer
         enumValues:
           - '1'
@@ -786,7 +839,7 @@ endpoints:
         name: ceiling_pop
         description: ''
         required: true
-        example: '1'
+        example: '3'
         type: integer
         enumValues:
           - '1'
@@ -812,7 +865,7 @@ endpoints:
         name: rooms_bedrooms_cabinet
         description: ''
         required: true
-        example: '1'
+        example: '3'
         type: integer
         enumValues:
           - '1'
@@ -825,7 +878,7 @@ endpoints:
         name: overall
         description: ''
         required: true
-        example: '4'
+        example: '1'
         type: integer
         enumValues:
           - '1'
@@ -838,42 +891,42 @@ endpoints:
         name: input_criteria
         description: ''
         required: true
-        example: et
+        example: ea
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanBodyParameters:
-      summary: mmvxu
-      property_name: xzhmmwdiwztxf
+      summary: lxek
+      property_name: lqqxtqmanvmmiwasrxyhsaiq
       images:
-        - odaxzpfpqqtkpgtpommqibff
-      property_type: xz
-      inspection_id: 18
+        - ydbojxoiebhwkkzcgebkwhgk
+      property_type: hsofaqbtddgiwy
+      inspection_id: 17
       door_accessing_property: '3'
       stairway: '4'
       door_hinges: '3'
-      door_locks: '4'
-      conduit_wiring: '3'
-      plumbing_leakage: '3'
+      door_locks: '1'
+      conduit_wiring: '4'
+      plumbing_leakage: '1'
       flooring: '4'
       electrical: '4'
       kitchen_sink: '2'
       kitchen_slab: '3'
-      paintings: '3'
-      windows_nets: '4'
-      ceiling_pop: '1'
+      paintings: '1'
+      windows_nets: '1'
+      ceiling_pop: '3'
       bathtubs: '4'
-      rooms_bedrooms_cabinet: '1'
-      overall: '4'
-      input_criteria: et
+      rooms_bedrooms_cabinet: '3'
+      overall: '1'
+      input_criteria: ea
     fileParameters: []
     responses: []
     responseFields: []
     auth:
       - headers
       - Authorization
-      - 'Bearer v6afc346P15ZhEbg8eDVakd'
+      - 'Bearer dDk5gaVaZhv366fc1ebE4P8'
     controller: null
     method: null
     route: null
@@ -916,7 +969,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 58hbPg3EadkeVaZ6c64fvD1'
+      - 'Bearer e15PE8b6hvaka46VZfcD3dg'
     controller: null
     method: null
     route: null
@@ -959,7 +1012,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer a5V6ae8hfEdc1vZ6Pb3gk4D'
+      - 'Bearer cEa3Dvhakb65dfZP4Ve816g'
     controller: null
     method: null
     route: null
@@ -986,13 +1039,13 @@ endpoints:
         name: id
         description: 'The ID of the getreport.'
         required: true
-        example: consequatur
+        example: '720'
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: consequatur
+      id: '720'
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -1012,7 +1065,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer e361vca6ghDEfPa84VdZ5kb'
+      - 'Bearer eagbVvhZ8fDk14c3P5a6d6E'
     controller: null
     method: null
     route: null
@@ -1039,13 +1092,13 @@ endpoints:
         name: id
         description: 'The ID of the updatereportstatus.'
         required: true
-        example: nam
+        example: '6'
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: nam
+      id: '6'
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:
@@ -1068,7 +1121,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer DgZ8Pd646E3cavebk5hV1af'
+      - 'Bearer fab3DvZeh51Vac6dg8Ek46P'
     controller: null
     method: null
     route: null

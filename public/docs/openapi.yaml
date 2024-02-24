@@ -47,27 +47,27 @@ paths:
                 first_name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: lhmxpeelneazecz
+                  example: tabud
                 last_name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: cacntvouzi
+                  example: edqzgtzvbitktsboolwfk
                 home_address:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: feqgxamkteukolfrqari
+                  example: pklubtdqnt
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: conn.joseph@example.org
+                  example: aluettgen@example.net
                 phone_number:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: bhxwoqqmw
+                  example: fawkaaddyzmbiyxev
                 role:
                   type: integer
                   description: ''
-                  example: '2'
+                  example: '3'
                   enum:
                     - '1'
                     - '2'
@@ -75,7 +75,11 @@ paths:
                 password:
                   type: string
                   description: 'Must be at least 8 characters.'
-                  example: '@cm>53#Il`{Wx8_:p'
+                  example: '=%mS3!QOdHZJ$l<^zVK'
+                password_confirmation:
+                  type: string
+                  description: 'The value and <code>password</code> must match. Must be at least 8 characters.'
+                  example: luqjnjhndflqz
               required:
                 - first_name
                 - last_name
@@ -84,6 +88,7 @@ paths:
                 - phone_number
                 - role
                 - password
+                - password_confirmation
   /api/login:
     post:
       summary: ''
@@ -103,14 +108,62 @@ paths:
                 email:
                   type: string
                   description: ''
-                  example: rosie.hane@example.net
+                  example: tre64@example.org
                 password:
                   type: string
                   description: ''
-                  example: 'Ts;jkyrRB,y)8LREW'
+                  example: '-B8&p%vV*9"5^X'
               required:
                 - email
                 - password
+  /api/flutterwave-callback:
+    post:
+      summary: ''
+      operationId: postApiFlutterwaveCallback
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                status:
+                  type: string
+                  description: ''
+                  example: non
+                transaction_id:
+                  type: string
+                  description: ''
+                  example: et
+              required:
+                - status
+                - transaction_id
+  /api/settings:
+    get:
+      summary: ''
+      operationId: getApiSettings
+      description: ''
+      parameters: []
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Endpoints
   /api/logout:
     post:
       summary: ''
@@ -139,26 +192,26 @@ paths:
                 unit_name:
                   type: string
                   description: ''
-                  example: vel
+                  example: est
                 location:
                   type: string
                   description: ''
-                  example: nemo
+                  example: eum
                 property_type:
                   type: string
                   description: ''
-                  example: ut
+                  example: quia
                 images:
                   type: array
                   description: 'Must not be greater than 2048 characters.'
                   example:
-                    - shasu
+                    - keqni
                   items:
                     type: string
                 is_occupied:
                   type: boolean
                   description: ''
-                  example: false
+                  example: true
                 occupants_name:
                   type: string
                   description: ''
@@ -166,15 +219,15 @@ paths:
                 occupants_contact:
                   type: string
                   description: ''
-                  example: facere
+                  example: omnis
                 first_date:
                   type: string
                   description: 'Must be a valid date.'
-                  example: '2024-02-22T11:16:23'
+                  example: '2024-02-24T14:30:45'
                 second_date:
                   type: string
                   description: 'Must be a valid date.'
-                  example: '2024-02-22T11:16:23'
+                  example: '2024-02-24T14:30:45'
               required:
                 - unit_name
                 - location
@@ -184,33 +237,6 @@ paths:
                 - occupants_contact
                 - first_date
                 - second_date
-  /api/request/verifypayment:
-    patch:
-      summary: ''
-      operationId: patchApiRequestVerifypayment
-      description: ''
-      parameters: []
-      responses: {  }
-      tags:
-        - Endpoints
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              type: object
-              properties:
-                transaction_reference:
-                  type: string
-                  description: ''
-                  example: sint
-                flutterwave_transaction_id:
-                  type: string
-                  description: ''
-                  example: neque
-              required:
-                - transaction_reference
-                - flutterwave_transaction_id
   /api/profile/change-password:
     patch:
       summary: ''
@@ -230,11 +256,11 @@ paths:
                 old_password:
                   type: string
                   description: ''
-                  example: consequatur
+                  example: laboriosam
                 new_password:
                   type: string
                   description: 'Must be at least 8 characters.'
-                  example: xnlfwkvqtzwbpdtpfhcyu
+                  example: ueinljlizvgobryidrjfkndtkgjoovfkfgypzol
               required:
                 - old_password
                 - new_password
@@ -257,15 +283,15 @@ paths:
                 first_name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: zlrbxexkvdlrobuwuxtjv
+                  example: hdpbbliatv
                 last_name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: tp
+                  example: 'y'
                 home_address:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: ult
+                  example: wlpulqwpjit
                 email:
                   type: string
                   description: ''
@@ -273,7 +299,7 @@ paths:
                 phone_number:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: gqjzihhppucnahhswbzpub
+                  example: mfxwali
   /api/reports/create:
     post:
       summary: ''
@@ -293,26 +319,26 @@ paths:
                 summary:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: mmvxu
+                  example: lxek
                 property_name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: xzhmmwdiwztxf
+                  example: lqqxtqmanvmmiwasrxyhsaiq
                 images:
                   type: array
                   description: 'Must not be greater than 2048 characters.'
                   example:
-                    - odaxzpfpqqtkpgtpommqibff
+                    - ydbojxoiebhwkkzcgebkwhgk
                   items:
                     type: string
                 property_type:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: xz
+                  example: hsofaqbtddgiwy
                 inspection_id:
                   type: integer
                   description: ''
-                  example: 18
+                  example: 17
                 door_accessing_property:
                   type: integer
                   description: ''
@@ -343,7 +369,7 @@ paths:
                 door_locks:
                   type: integer
                   description: ''
-                  example: '4'
+                  example: '1'
                   enum:
                     - '1'
                     - '2'
@@ -352,7 +378,7 @@ paths:
                 conduit_wiring:
                   type: integer
                   description: ''
-                  example: '3'
+                  example: '4'
                   enum:
                     - '1'
                     - '2'
@@ -361,7 +387,7 @@ paths:
                 plumbing_leakage:
                   type: integer
                   description: ''
-                  example: '3'
+                  example: '1'
                   enum:
                     - '1'
                     - '2'
@@ -406,7 +432,7 @@ paths:
                 paintings:
                   type: integer
                   description: ''
-                  example: '3'
+                  example: '1'
                   enum:
                     - '1'
                     - '2'
@@ -415,7 +441,7 @@ paths:
                 windows_nets:
                   type: integer
                   description: ''
-                  example: '4'
+                  example: '1'
                   enum:
                     - '1'
                     - '2'
@@ -424,7 +450,7 @@ paths:
                 ceiling_pop:
                   type: integer
                   description: ''
-                  example: '1'
+                  example: '3'
                   enum:
                     - '1'
                     - '2'
@@ -442,7 +468,7 @@ paths:
                 rooms_bedrooms_cabinet:
                   type: integer
                   description: ''
-                  example: '1'
+                  example: '3'
                   enum:
                     - '1'
                     - '2'
@@ -451,7 +477,7 @@ paths:
                 overall:
                   type: integer
                   description: ''
-                  example: '4'
+                  example: '1'
                   enum:
                     - '1'
                     - '2'
@@ -460,7 +486,7 @@ paths:
                 input_criteria:
                   type: string
                   description: ''
-                  example: et
+                  example: ea
               required:
                 - summary
                 - property_name
@@ -551,7 +577,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the getreport.'
-        example: consequatur
+        example: '720'
         required: true
         schema:
           type: string
@@ -585,7 +611,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the updatereportstatus.'
-        example: nam
+        example: '6'
         required: true
         schema:
           type: string

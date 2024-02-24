@@ -13,6 +13,7 @@ class ProfileController extends Controller
         $request->validate([
             'old_password' => 'required|string',
             'new_password' => 'required|string|min:8|confirmed',
+            'new_password_confirmation' => 'required|string|min:8|same:new_password',
         ]);
 
         $user = $request->user();
@@ -31,7 +32,7 @@ class ProfileController extends Controller
             'first_name' => 'string|max:255',
             'last_name' => 'string|max:255',
             'home_address' => 'string|max:255',
-            'email' => 'email|unique:users,email,'.$request->user()->id,
+            'email' => 'email|unique:users,email',
             'phone_number' => 'string|max:255',
         ]);
 

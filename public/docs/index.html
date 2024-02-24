@@ -80,14 +80,17 @@
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-POSTapi-login">
                                 <a href="#endpoints-POSTapi-login">POST api/login</a>
                             </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-flutterwave-callback">
+                                <a href="#endpoints-POSTapi-flutterwave-callback">POST api/flutterwave-callback</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-settings">
+                                <a href="#endpoints-GETapi-settings">GET api/settings</a>
+                            </li>
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-POSTapi-logout">
                                 <a href="#endpoints-POSTapi-logout">POST api/logout</a>
                             </li>
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-POSTapi-request-new">
                                 <a href="#endpoints-POSTapi-request-new">POST api/request/new</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-PATCHapi-request-verifypayment">
-                                <a href="#endpoints-PATCHapi-request-verifypayment">PATCH api/request/verifypayment</a>
                             </li>
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-PATCHapi-profile-change-password">
                                 <a href="#endpoints-PATCHapi-profile-change-password">PATCH api/profile/change-password</a>
@@ -121,7 +124,7 @@
     </ul>
 
     <ul class="toc-footer" id="last-updated">
-        <li>Last updated: February 22, 2024</li>
+        <li>Last updated: February 24, 2024</li>
     </ul>
 </div>
 
@@ -302,13 +305,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"first_name\": \"lhmxpeelneazecz\",
-    \"last_name\": \"cacntvouzi\",
-    \"home_address\": \"feqgxamkteukolfrqari\",
-    \"email\": \"conn.joseph@example.org\",
-    \"phone_number\": \"bhxwoqqmw\",
-    \"role\": \"2\",
-    \"password\": \"@cm&gt;53#Il`{Wx8_:p\"
+    \"first_name\": \"tabud\",
+    \"last_name\": \"edqzgtzvbitktsboolwfk\",
+    \"home_address\": \"pklubtdqnt\",
+    \"email\": \"aluettgen@example.net\",
+    \"phone_number\": \"fawkaaddyzmbiyxev\",
+    \"role\": \"3\",
+    \"password\": \"=%mS3!QOdHZJ$l&lt;^zVK\",
+    \"password_confirmation\": \"luqjnjhndflqz\"
 }"
 </code></pre></div>
 
@@ -325,13 +329,14 @@ const headers = {
 };
 
 let body = {
-    "first_name": "lhmxpeelneazecz",
-    "last_name": "cacntvouzi",
-    "home_address": "feqgxamkteukolfrqari",
-    "email": "conn.joseph@example.org",
-    "phone_number": "bhxwoqqmw",
-    "role": "2",
-    "password": "@cm&gt;53#Il`{Wx8_:p"
+    "first_name": "tabud",
+    "last_name": "edqzgtzvbitktsboolwfk",
+    "home_address": "pklubtdqnt",
+    "email": "aluettgen@example.net",
+    "phone_number": "fawkaaddyzmbiyxev",
+    "role": "3",
+    "password": "=%mS3!QOdHZJ$l&lt;^zVK",
+    "password_confirmation": "luqjnjhndflqz"
 };
 
 fetch(url, {
@@ -431,10 +436,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="first_name"                data-endpoint="POSTapi-register"
-               value="lhmxpeelneazecz"
+               value="tabud"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>lhmxpeelneazecz</code></p>
+<p>Must not be greater than 255 characters. Example: <code>tabud</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>last_name</code></b>&nbsp;&nbsp;
@@ -442,10 +447,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="last_name"                data-endpoint="POSTapi-register"
-               value="cacntvouzi"
+               value="edqzgtzvbitktsboolwfk"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>cacntvouzi</code></p>
+<p>Must not be greater than 255 characters. Example: <code>edqzgtzvbitktsboolwfk</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>home_address</code></b>&nbsp;&nbsp;
@@ -453,10 +458,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="home_address"                data-endpoint="POSTapi-register"
-               value="feqgxamkteukolfrqari"
+               value="pklubtdqnt"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>feqgxamkteukolfrqari</code></p>
+<p>Must not be greater than 255 characters. Example: <code>pklubtdqnt</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -464,10 +469,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="POSTapi-register"
-               value="conn.joseph@example.org"
+               value="aluettgen@example.net"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>conn.joseph@example.org</code></p>
+<p>Must be a valid email address. Example: <code>aluettgen@example.net</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>phone_number</code></b>&nbsp;&nbsp;
@@ -475,10 +480,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="phone_number"                data-endpoint="POSTapi-register"
-               value="bhxwoqqmw"
+               value="fawkaaddyzmbiyxev"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>bhxwoqqmw</code></p>
+<p>Must not be greater than 255 characters. Example: <code>fawkaaddyzmbiyxev</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>role</code></b>&nbsp;&nbsp;
@@ -486,10 +491,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="role"                data-endpoint="POSTapi-register"
-               value="2"
+               value="3"
                data-component="body">
     <br>
-<p>Example: <code>2</code></p>
+<p>Example: <code>3</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>1</code></li> <li><code>2</code></li> <li><code>3</code></li></ul>
         </div>
@@ -499,10 +504,21 @@ Must be one of:
  &nbsp;
                 <input type="text" style="display: none"
                               name="password"                data-endpoint="POSTapi-register"
-               value="@cm>53#Il`{Wx8_:p"
+               value="=%mS3!QOdHZJ$l<^zVK"
                data-component="body">
     <br>
-<p>Must be at least 8 characters. Example: <code>@cm&gt;53#Il</code>{Wx8_:p`</p>
+<p>Must be at least 8 characters. Example: <code>=%mS3!QOdHZJ$l&lt;^zVK</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>password_confirmation</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="password_confirmation"                data-endpoint="POSTapi-register"
+               value="luqjnjhndflqz"
+               data-component="body">
+    <br>
+<p>The value and <code>password</code> must match. Must be at least 8 characters. Example: <code>luqjnjhndflqz</code></p>
         </div>
         </form>
 
@@ -525,8 +541,8 @@ Must be one of:
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"rosie.hane@example.net\",
-    \"password\": \"Ts;jkyrRB,y)8LREW\"
+    \"email\": \"tre64@example.org\",
+    \"password\": \"-B8&amp;p%vV*9\\\"5^X\"
 }"
 </code></pre></div>
 
@@ -543,8 +559,8 @@ const headers = {
 };
 
 let body = {
-    "email": "rosie.hane@example.net",
-    "password": "Ts;jkyrRB,y)8LREW"
+    "email": "tre64@example.org",
+    "password": "-B8&amp;p%vV*9\"5^X"
 };
 
 fetch(url, {
@@ -644,10 +660,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="POSTapi-login"
-               value="rosie.hane@example.net"
+               value="tre64@example.org"
                data-component="body">
     <br>
-<p>Example: <code>rosie.hane@example.net</code></p>
+<p>Example: <code>tre64@example.org</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -655,12 +671,306 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="password"                data-endpoint="POSTapi-login"
-               value="Ts;jkyrRB,y)8LREW"
+               value="-B8&p%vV*9"5^X"
                data-component="body">
     <br>
-<p>Example: <code>Ts;jkyrRB,y)8LREW</code></p>
+<p>Example: <code>-B8&amp;p%vV*9"5^X</code></p>
         </div>
         </form>
+
+                    <h2 id="endpoints-POSTapi-flutterwave-callback">POST api/flutterwave-callback</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+
+
+<span id="example-requests-POSTapi-flutterwave-callback">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request POST \
+    "http://localhost:8000/api/flutterwave-callback" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"status\": \"non\",
+    \"transaction_id\": \"et\"
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/flutterwave-callback"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "status": "non",
+    "transaction_id": "et"
+};
+
+fetch(url, {
+    method: "POST",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-POSTapi-flutterwave-callback">
+</span>
+<span id="execution-results-POSTapi-flutterwave-callback" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTapi-flutterwave-callback"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-flutterwave-callback"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-POSTapi-flutterwave-callback" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-flutterwave-callback">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-POSTapi-flutterwave-callback" data-method="POST"
+      data-path="api/flutterwave-callback"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTapi-flutterwave-callback', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTapi-flutterwave-callback"
+                    onclick="tryItOut('POSTapi-flutterwave-callback');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTapi-flutterwave-callback"
+                    onclick="cancelTryOut('POSTapi-flutterwave-callback');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTapi-flutterwave-callback"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>api/flutterwave-callback</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-flutterwave-callback"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="POSTapi-flutterwave-callback"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="POSTapi-flutterwave-callback"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>status</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="status"                data-endpoint="POSTapi-flutterwave-callback"
+               value="non"
+               data-component="body">
+    <br>
+<p>Example: <code>non</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>transaction_id</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="transaction_id"                data-endpoint="POSTapi-flutterwave-callback"
+               value="et"
+               data-component="body">
+    <br>
+<p>Example: <code>et</code></p>
+        </div>
+        </form>
+
+                    <h2 id="endpoints-GETapi-settings">GET api/settings</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+
+
+<span id="example-requests-GETapi-settings">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/settings" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/settings"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-settings">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: *
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-settings" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-settings"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-settings"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-settings" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-settings">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-settings" data-method="GET"
+      data-path="api/settings"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-settings', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-settings"
+                    onclick="tryItOut('GETapi-settings');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-settings"
+                    onclick="cancelTryOut('GETapi-settings');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-settings"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/settings</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-settings"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-settings"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-settings"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
 
                     <h2 id="endpoints-POSTapi-logout">POST api/logout</h2>
 
@@ -803,17 +1113,17 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"unit_name\": \"vel\",
-    \"location\": \"nemo\",
-    \"property_type\": \"ut\",
+    \"unit_name\": \"est\",
+    \"location\": \"eum\",
+    \"property_type\": \"quia\",
     \"images\": [
-        \"shasu\"
+        \"keqni\"
     ],
-    \"is_occupied\": false,
+    \"is_occupied\": true,
     \"occupants_name\": \"id\",
-    \"occupants_contact\": \"facere\",
-    \"first_date\": \"2024-02-22T11:16:23\",
-    \"second_date\": \"2024-02-22T11:16:23\"
+    \"occupants_contact\": \"omnis\",
+    \"first_date\": \"2024-02-24T14:30:45\",
+    \"second_date\": \"2024-02-24T14:30:45\"
 }"
 </code></pre></div>
 
@@ -830,17 +1140,17 @@ const headers = {
 };
 
 let body = {
-    "unit_name": "vel",
-    "location": "nemo",
-    "property_type": "ut",
+    "unit_name": "est",
+    "location": "eum",
+    "property_type": "quia",
     "images": [
-        "shasu"
+        "keqni"
     ],
-    "is_occupied": false,
+    "is_occupied": true,
     "occupants_name": "id",
-    "occupants_contact": "facere",
-    "first_date": "2024-02-22T11:16:23",
-    "second_date": "2024-02-22T11:16:23"
+    "occupants_contact": "omnis",
+    "first_date": "2024-02-24T14:30:45",
+    "second_date": "2024-02-24T14:30:45"
 };
 
 fetch(url, {
@@ -940,10 +1250,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="unit_name"                data-endpoint="POSTapi-request-new"
-               value="vel"
+               value="est"
                data-component="body">
     <br>
-<p>Example: <code>vel</code></p>
+<p>Example: <code>est</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>location</code></b>&nbsp;&nbsp;
@@ -951,10 +1261,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="location"                data-endpoint="POSTapi-request-new"
-               value="nemo"
+               value="eum"
                data-component="body">
     <br>
-<p>Example: <code>nemo</code></p>
+<p>Example: <code>eum</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>property_type</code></b>&nbsp;&nbsp;
@@ -962,10 +1272,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="property_type"                data-endpoint="POSTapi-request-new"
-               value="ut"
+               value="quia"
                data-component="body">
     <br>
-<p>Example: <code>ut</code></p>
+<p>Example: <code>quia</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>images</code></b>&nbsp;&nbsp;
@@ -999,7 +1309,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Example: <code>false</code></p>
+<p>Example: <code>true</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>occupants_name</code></b>&nbsp;&nbsp;
@@ -1018,10 +1328,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="occupants_contact"                data-endpoint="POSTapi-request-new"
-               value="facere"
+               value="omnis"
                data-component="body">
     <br>
-<p>Example: <code>facere</code></p>
+<p>Example: <code>omnis</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>first_date</code></b>&nbsp;&nbsp;
@@ -1029,10 +1339,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="first_date"                data-endpoint="POSTapi-request-new"
-               value="2024-02-22T11:16:23"
+               value="2024-02-24T14:30:45"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2024-02-22T11:16:23</code></p>
+<p>Must be a valid date. Example: <code>2024-02-24T14:30:45</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>second_date</code></b>&nbsp;&nbsp;
@@ -1040,166 +1350,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="second_date"                data-endpoint="POSTapi-request-new"
-               value="2024-02-22T11:16:23"
+               value="2024-02-24T14:30:45"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2024-02-22T11:16:23</code></p>
-        </div>
-        </form>
-
-                    <h2 id="endpoints-PATCHapi-request-verifypayment">PATCH api/request/verifypayment</h2>
-
-<p>
-<small class="badge badge-darkred">requires authentication</small>
-</p>
-
-
-
-<span id="example-requests-PATCHapi-request-verifypayment">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request PATCH \
-    "http://localhost:8000/api/request/verifypayment" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json" \
-    --data "{
-    \"transaction_reference\": \"sint\",
-    \"flutterwave_transaction_id\": \"neque\"
-}"
-</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/request/verifypayment"
-);
-
-const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-let body = {
-    "transaction_reference": "sint",
-    "flutterwave_transaction_id": "neque"
-};
-
-fetch(url, {
-    method: "PATCH",
-    headers,
-    body: JSON.stringify(body),
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-PATCHapi-request-verifypayment">
-</span>
-<span id="execution-results-PATCHapi-request-verifypayment" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-PATCHapi-request-verifypayment"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-PATCHapi-request-verifypayment"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-PATCHapi-request-verifypayment" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-PATCHapi-request-verifypayment">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-PATCHapi-request-verifypayment" data-method="PATCH"
-      data-path="api/request/verifypayment"
-      data-authed="1"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('PATCHapi-request-verifypayment', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-PATCHapi-request-verifypayment"
-                    onclick="tryItOut('PATCHapi-request-verifypayment');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-PATCHapi-request-verifypayment"
-                    onclick="cancelTryOut('PATCHapi-request-verifypayment');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-PATCHapi-request-verifypayment"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-purple">PATCH</small>
-            <b><code>api/request/verifypayment</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Authorization" class="auth-value"               data-endpoint="PATCHapi-request-verifypayment"
-               value="Bearer {YOUR_AUTH_KEY}"
-               data-component="header">
-    <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="PATCHapi-request-verifypayment"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="PATCHapi-request-verifypayment"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
-        <div style=" padding-left: 28px;  clear: unset;">
-            <b style="line-height: 2;"><code>transaction_reference</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="transaction_reference"                data-endpoint="PATCHapi-request-verifypayment"
-               value="sint"
-               data-component="body">
-    <br>
-<p>Example: <code>sint</code></p>
-        </div>
-                <div style=" padding-left: 28px;  clear: unset;">
-            <b style="line-height: 2;"><code>flutterwave_transaction_id</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="flutterwave_transaction_id"                data-endpoint="PATCHapi-request-verifypayment"
-               value="neque"
-               data-component="body">
-    <br>
-<p>Example: <code>neque</code></p>
+<p>Must be a valid date. Example: <code>2024-02-24T14:30:45</code></p>
         </div>
         </form>
 
@@ -1222,8 +1376,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"old_password\": \"consequatur\",
-    \"new_password\": \"xnlfwkvqtzwbpdtpfhcyu\"
+    \"old_password\": \"laboriosam\",
+    \"new_password\": \"ueinljlizvgobryidrjfkndtkgjoovfkfgypzol\"
 }"
 </code></pre></div>
 
@@ -1240,8 +1394,8 @@ const headers = {
 };
 
 let body = {
-    "old_password": "consequatur",
-    "new_password": "xnlfwkvqtzwbpdtpfhcyu"
+    "old_password": "laboriosam",
+    "new_password": "ueinljlizvgobryidrjfkndtkgjoovfkfgypzol"
 };
 
 fetch(url, {
@@ -1341,10 +1495,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="old_password"                data-endpoint="PATCHapi-profile-change-password"
-               value="consequatur"
+               value="laboriosam"
                data-component="body">
     <br>
-<p>Example: <code>consequatur</code></p>
+<p>Example: <code>laboriosam</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>new_password</code></b>&nbsp;&nbsp;
@@ -1352,10 +1506,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="new_password"                data-endpoint="PATCHapi-profile-change-password"
-               value="xnlfwkvqtzwbpdtpfhcyu"
+               value="ueinljlizvgobryidrjfkndtkgjoovfkfgypzol"
                data-component="body">
     <br>
-<p>Must be at least 8 characters. Example: <code>xnlfwkvqtzwbpdtpfhcyu</code></p>
+<p>Must be at least 8 characters. Example: <code>ueinljlizvgobryidrjfkndtkgjoovfkfgypzol</code></p>
         </div>
         </form>
 
@@ -1378,10 +1532,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"first_name\": \"zlrbxexkvdlrobuwuxtjv\",
-    \"last_name\": \"tp\",
-    \"home_address\": \"ult\",
-    \"phone_number\": \"gqjzihhppucnahhswbzpub\"
+    \"first_name\": \"hdpbbliatv\",
+    \"last_name\": \"y\",
+    \"home_address\": \"wlpulqwpjit\",
+    \"phone_number\": \"mfxwali\"
 }"
 </code></pre></div>
 
@@ -1398,10 +1552,10 @@ const headers = {
 };
 
 let body = {
-    "first_name": "zlrbxexkvdlrobuwuxtjv",
-    "last_name": "tp",
-    "home_address": "ult",
-    "phone_number": "gqjzihhppucnahhswbzpub"
+    "first_name": "hdpbbliatv",
+    "last_name": "y",
+    "home_address": "wlpulqwpjit",
+    "phone_number": "mfxwali"
 };
 
 fetch(url, {
@@ -1501,10 +1655,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="first_name"                data-endpoint="PATCHapi-profile-update-profile"
-               value="zlrbxexkvdlrobuwuxtjv"
+               value="hdpbbliatv"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>zlrbxexkvdlrobuwuxtjv</code></p>
+<p>Must not be greater than 255 characters. Example: <code>hdpbbliatv</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>last_name</code></b>&nbsp;&nbsp;
@@ -1512,10 +1666,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="last_name"                data-endpoint="PATCHapi-profile-update-profile"
-               value="tp"
+               value="y"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>tp</code></p>
+<p>Must not be greater than 255 characters. Example: <code>y</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>home_address</code></b>&nbsp;&nbsp;
@@ -1523,10 +1677,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="home_address"                data-endpoint="PATCHapi-profile-update-profile"
-               value="ult"
+               value="wlpulqwpjit"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>ult</code></p>
+<p>Must not be greater than 255 characters. Example: <code>wlpulqwpjit</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -1545,10 +1699,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="phone_number"                data-endpoint="PATCHapi-profile-update-profile"
-               value="gqjzihhppucnahhswbzpub"
+               value="mfxwali"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>gqjzihhppucnahhswbzpub</code></p>
+<p>Must not be greater than 255 characters. Example: <code>mfxwali</code></p>
         </div>
         </form>
 
@@ -1571,30 +1725,30 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"summary\": \"mmvxu\",
-    \"property_name\": \"xzhmmwdiwztxf\",
+    \"summary\": \"lxek\",
+    \"property_name\": \"lqqxtqmanvmmiwasrxyhsaiq\",
     \"images\": [
-        \"odaxzpfpqqtkpgtpommqibff\"
+        \"ydbojxoiebhwkkzcgebkwhgk\"
     ],
-    \"property_type\": \"xz\",
-    \"inspection_id\": 18,
+    \"property_type\": \"hsofaqbtddgiwy\",
+    \"inspection_id\": 17,
     \"door_accessing_property\": \"3\",
     \"stairway\": \"4\",
     \"door_hinges\": \"3\",
-    \"door_locks\": \"4\",
-    \"conduit_wiring\": \"3\",
-    \"plumbing_leakage\": \"3\",
+    \"door_locks\": \"1\",
+    \"conduit_wiring\": \"4\",
+    \"plumbing_leakage\": \"1\",
     \"flooring\": \"4\",
     \"electrical\": \"4\",
     \"kitchen_sink\": \"2\",
     \"kitchen_slab\": \"3\",
-    \"paintings\": \"3\",
-    \"windows_nets\": \"4\",
-    \"ceiling_pop\": \"1\",
+    \"paintings\": \"1\",
+    \"windows_nets\": \"1\",
+    \"ceiling_pop\": \"3\",
     \"bathtubs\": \"4\",
-    \"rooms_bedrooms_cabinet\": \"1\",
-    \"overall\": \"4\",
-    \"input_criteria\": \"et\"
+    \"rooms_bedrooms_cabinet\": \"3\",
+    \"overall\": \"1\",
+    \"input_criteria\": \"ea\"
 }"
 </code></pre></div>
 
@@ -1611,30 +1765,30 @@ const headers = {
 };
 
 let body = {
-    "summary": "mmvxu",
-    "property_name": "xzhmmwdiwztxf",
+    "summary": "lxek",
+    "property_name": "lqqxtqmanvmmiwasrxyhsaiq",
     "images": [
-        "odaxzpfpqqtkpgtpommqibff"
+        "ydbojxoiebhwkkzcgebkwhgk"
     ],
-    "property_type": "xz",
-    "inspection_id": 18,
+    "property_type": "hsofaqbtddgiwy",
+    "inspection_id": 17,
     "door_accessing_property": "3",
     "stairway": "4",
     "door_hinges": "3",
-    "door_locks": "4",
-    "conduit_wiring": "3",
-    "plumbing_leakage": "3",
+    "door_locks": "1",
+    "conduit_wiring": "4",
+    "plumbing_leakage": "1",
     "flooring": "4",
     "electrical": "4",
     "kitchen_sink": "2",
     "kitchen_slab": "3",
-    "paintings": "3",
-    "windows_nets": "4",
-    "ceiling_pop": "1",
+    "paintings": "1",
+    "windows_nets": "1",
+    "ceiling_pop": "3",
     "bathtubs": "4",
-    "rooms_bedrooms_cabinet": "1",
-    "overall": "4",
-    "input_criteria": "et"
+    "rooms_bedrooms_cabinet": "3",
+    "overall": "1",
+    "input_criteria": "ea"
 };
 
 fetch(url, {
@@ -1734,10 +1888,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="summary"                data-endpoint="POSTapi-reports-create"
-               value="mmvxu"
+               value="lxek"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>mmvxu</code></p>
+<p>Must not be greater than 255 characters. Example: <code>lxek</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>property_name</code></b>&nbsp;&nbsp;
@@ -1745,10 +1899,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="property_name"                data-endpoint="POSTapi-reports-create"
-               value="xzhmmwdiwztxf"
+               value="lqqxtqmanvmmiwasrxyhsaiq"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>xzhmmwdiwztxf</code></p>
+<p>Must not be greater than 255 characters. Example: <code>lqqxtqmanvmmiwasrxyhsaiq</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>images</code></b>&nbsp;&nbsp;
@@ -1769,10 +1923,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="property_type"                data-endpoint="POSTapi-reports-create"
-               value="xz"
+               value="hsofaqbtddgiwy"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>xz</code></p>
+<p>Must not be greater than 255 characters. Example: <code>hsofaqbtddgiwy</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>inspection_id</code></b>&nbsp;&nbsp;
@@ -1780,10 +1934,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="inspection_id"                data-endpoint="POSTapi-reports-create"
-               value="18"
+               value="17"
                data-component="body">
     <br>
-<p>Example: <code>18</code></p>
+<p>Example: <code>17</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>door_accessing_property</code></b>&nbsp;&nbsp;
@@ -1830,10 +1984,10 @@ Must be one of:
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="door_locks"                data-endpoint="POSTapi-reports-create"
-               value="4"
+               value="1"
                data-component="body">
     <br>
-<p>Example: <code>4</code></p>
+<p>Example: <code>1</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>1</code></li> <li><code>2</code></li> <li><code>3</code></li> <li><code>4</code></li></ul>
         </div>
@@ -1843,10 +1997,10 @@ Must be one of:
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="conduit_wiring"                data-endpoint="POSTapi-reports-create"
-               value="3"
+               value="4"
                data-component="body">
     <br>
-<p>Example: <code>3</code></p>
+<p>Example: <code>4</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>1</code></li> <li><code>2</code></li> <li><code>3</code></li> <li><code>4</code></li></ul>
         </div>
@@ -1856,10 +2010,10 @@ Must be one of:
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="plumbing_leakage"                data-endpoint="POSTapi-reports-create"
-               value="3"
+               value="1"
                data-component="body">
     <br>
-<p>Example: <code>3</code></p>
+<p>Example: <code>1</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>1</code></li> <li><code>2</code></li> <li><code>3</code></li> <li><code>4</code></li></ul>
         </div>
@@ -1921,10 +2075,10 @@ Must be one of:
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="paintings"                data-endpoint="POSTapi-reports-create"
-               value="3"
+               value="1"
                data-component="body">
     <br>
-<p>Example: <code>3</code></p>
+<p>Example: <code>1</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>1</code></li> <li><code>2</code></li> <li><code>3</code></li> <li><code>4</code></li></ul>
         </div>
@@ -1934,10 +2088,10 @@ Must be one of:
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="windows_nets"                data-endpoint="POSTapi-reports-create"
-               value="4"
+               value="1"
                data-component="body">
     <br>
-<p>Example: <code>4</code></p>
+<p>Example: <code>1</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>1</code></li> <li><code>2</code></li> <li><code>3</code></li> <li><code>4</code></li></ul>
         </div>
@@ -1947,10 +2101,10 @@ Must be one of:
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="ceiling_pop"                data-endpoint="POSTapi-reports-create"
-               value="1"
+               value="3"
                data-component="body">
     <br>
-<p>Example: <code>1</code></p>
+<p>Example: <code>3</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>1</code></li> <li><code>2</code></li> <li><code>3</code></li> <li><code>4</code></li></ul>
         </div>
@@ -1973,10 +2127,10 @@ Must be one of:
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="rooms_bedrooms_cabinet"                data-endpoint="POSTapi-reports-create"
-               value="1"
+               value="3"
                data-component="body">
     <br>
-<p>Example: <code>1</code></p>
+<p>Example: <code>3</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>1</code></li> <li><code>2</code></li> <li><code>3</code></li> <li><code>4</code></li></ul>
         </div>
@@ -1986,10 +2140,10 @@ Must be one of:
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="overall"                data-endpoint="POSTapi-reports-create"
-               value="4"
+               value="1"
                data-component="body">
     <br>
-<p>Example: <code>4</code></p>
+<p>Example: <code>1</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>1</code></li> <li><code>2</code></li> <li><code>3</code></li> <li><code>4</code></li></ul>
         </div>
@@ -1999,10 +2153,10 @@ Must be one of:
  &nbsp;
                 <input type="text" style="display: none"
                               name="input_criteria"                data-endpoint="POSTapi-reports-create"
-               value="et"
+               value="ea"
                data-component="body">
     <br>
-<p>Example: <code>et</code></p>
+<p>Example: <code>ea</code></p>
         </div>
         </form>
 
@@ -2296,7 +2450,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/reports/getreport/consequatur" \
+    --get "http://localhost:8000/api/reports/getreport/720" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
@@ -2304,7 +2458,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/reports/getreport/consequatur"
+    "http://localhost:8000/api/reports/getreport/720"
 );
 
 const headers = {
@@ -2425,10 +2579,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="id"                data-endpoint="GETapi-reports-getreport--id-"
-               value="consequatur"
+               value="720"
                data-component="url">
     <br>
-<p>The ID of the getreport. Example: <code>consequatur</code></p>
+<p>The ID of the getreport. Example: <code>720</code></p>
             </div>
                     </form>
 
@@ -2446,7 +2600,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "http://localhost:8000/api/reports/updatereportstatus/nam" \
+    "http://localhost:8000/api/reports/updatereportstatus/6" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
@@ -2458,7 +2612,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/reports/updatereportstatus/nam"
+    "http://localhost:8000/api/reports/updatereportstatus/6"
 );
 
 const headers = {
@@ -2568,10 +2722,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="id"                data-endpoint="POSTapi-reports-updatereportstatus--id-"
-               value="nam"
+               value="6"
                data-component="url">
     <br>
-<p>The ID of the updatereportstatus. Example: <code>nam</code></p>
+<p>The ID of the updatereportstatus. Example: <code>6</code></p>
             </div>
                             <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
