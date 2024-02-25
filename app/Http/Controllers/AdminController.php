@@ -2,14 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use App\Core\Enums\InspectionRequestStatusEnum;
+use App\Models\User;
+use App\Models\Transactions;
+use Illuminate\Http\Request;
+use App\Traits\HttpResponses;
+use App\Models\InspectionRequests;
 use App\Core\Enums\TransactionStatusEnum;
+use App\Core\Enums\InspectionRequestStatusEnum;
 use App\Http\Resources\InspectionRequestResource;
 use App\Http\Resources\PaymentTransactionResource;
-use App\Models\InspectionRequests;
-use App\Models\Transactions;
-use App\Traits\HttpResponses;
-use Illuminate\Http\Request;
 
 class AdminController extends Controller
 {
@@ -66,5 +67,14 @@ class AdminController extends Controller
             "inspections" => $inspections
         ]);
 
+    }
+
+    public function Users(Request $request){
+        $users = User::all();
+        return $this->success("Users Data Retrieved Successfully",
+
+        [ "users" => $users ,
+            "active" => $users->count()
+        ]);
     }
 }

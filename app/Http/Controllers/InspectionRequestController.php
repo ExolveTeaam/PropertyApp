@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\InspectionPriceSettings;
 use App\Models\Settings;
 use Ramsey\Uuid\Guid\Guid;
 use App\Models\Transactions;
@@ -34,7 +35,7 @@ class InspectionRequestController extends Controller
         $request->validate([
             'unit_name' => 'required|string',
             'location' => 'required|string',
-            'property_type' => 'required|string',
+            'property_type' => 'required|integer|in:1,2,3,4,5,6,7',
             'images' => 'array',
             'images.*' => 'mimes:jpeg,png,jpg,gif,svg|max:2048',
             'is_occupied' => 'required|boolean',
@@ -44,7 +45,7 @@ class InspectionRequestController extends Controller
             'second_date' => 'required|date'
         ]);
         $transaction = new Transactions();
-        $transaction->amount = Settings::pluck('inspection_fee')->first();
+        $transaction->amount = InspectionPriceSettings::where("property_type",$request->property_type)->first()->inspection_fee;
         $transaction->transaction_reference = Guid::uuid4()->toString();
         $transaction->status = TransactionStatusEnum::PENDING->value;
         $transaction->save();
