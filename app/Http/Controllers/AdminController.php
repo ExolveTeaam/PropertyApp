@@ -9,6 +9,7 @@ use App\Traits\HttpResponses;
 use App\Models\InspectionRequests;
 use App\Core\Enums\TransactionStatusEnum;
 use App\Core\Enums\InspectionRequestStatusEnum;
+use App\Core\Enums\RoleEnum;
 use App\Http\Resources\InspectionRequestResource;
 use App\Http\Resources\PaymentTransactionResource;
 
@@ -34,6 +35,12 @@ class AdminController extends Controller
 
     }
 
+    public function AssignInspector(Request $request, $id){
+        $inspection = InspectionRequests::find($id);
+        $inspection->inspector_id = $request->inspector_id;
+        $inspection->save();
+        return $this->success("Inspector Assigned Successfully", $inspection);
+    }
     public function AdminPaymentDashboard(Request $request){
         $transactions = Transactions::all()->pluck('status');
         $revenue = $transactions->sum('amount');
@@ -77,4 +84,13 @@ class AdminController extends Controller
             "active" => $users->count()
         ]);
     }
+
+    public function Inspectors(Request $request){
+        $inspectors = User::where('role',RoleEnum::PROPERTYINSPECTOR->value)->get();
+        return $this->success("Inspectors Data Retrieved Successfully",[
+            "inspectors" => $inspectors,
+            "active" => $inspectors->count()
+        ]);
+    }
+
 }

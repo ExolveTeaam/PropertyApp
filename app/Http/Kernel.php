@@ -66,5 +66,6 @@ class Kernel extends HttpKernel
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
         'must.be.inspector' => \App\Http\Middleware\MustBeInspector::class,
         'must.be.propertymanager' => \App\Http\Middleware\MustBePropertyManager::class,
+        'must.be.admin' => \App\Http\Middleware\MustBeAdmin::class,
     ];
 }

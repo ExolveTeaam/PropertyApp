@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SettingsController;
 use App\Http\Controllers\InspectorController;
@@ -44,6 +45,14 @@ Route::middleware(["auth:api"])->group(function(){
         Route::get("getreports",[InspectorController::class,'GetReports']);
         Route::get("getreport/{id}",[InspectorController::class,'GetReport'])->where('id','[0-9]+');
         Route::post("updatereportstatus/{id}",[InspectorController::class,'ChangeInspectionRequestStatus'])->where('id','[0-9]+');
+    });
+
+    Route::middleware(["must.be.admin"])->prefix("admin")->group(function(){
+        Route::get("dashboard",[AdminController::class,'AdminDashboard']);
+        Route::get("payment-dashboard",[AdminController::class,'AdminPaymentDashboard']);
+        Route::get("inspections",[AdminController::class,'Inspections']);
+        Route::get("getinspectors",[AdminController::class,'Inspectors']);
+        Route::post("assigninspector/{id}",[AdminController::class,'AssignInspector'])->where('id','[0-9]+');
     });
 });
 
